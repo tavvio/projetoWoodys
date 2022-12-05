@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="benjamim, giovane, otavio, pedro, vinicius">
+        <meta name="description" content="pub, bar, lancheria, woody, faroeste, tematico, caxias do sul">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Smokum&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+
+        <link href="css/estilo1.css" rel="stylesheet">
+        <title>Woody's - Home</title>
+    </head> 
+    <body>
+        <!-- <img class="demo-bg" src="img/background.png" alt=""> -->
+        <div class="conteudo">
+            <header>
+                <div id="banner" role="banner">
+                    <img src="img/logo.png" alt="Logo" width="200" height="150">
+                    <h1 id="banner-titulo">Woody's</h1>
+                </div>
+                <nav id="navegacao">
+                    <a href="index.html">Home</a>
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </header>
+            <main>   
+                <!-- cardapio -->
+                <div class="div-cardapio div-main">
+                    <div class="main-img div-main-img-esquerda">
+                        <img src="img/cardapio.png" alt="Foto do cardápio">
+                    </div>
+                    <div class="main-texto">
+                        <h2 class="main-subtitulo">Veja nosso cardápio</h2>
+                        <br>
+                        <a href="cardapio.html">Ver cardápio</a>
+                    </div>
+                </div>
+                <!-- brincadeiras -->
+                <div class="div-brincadeiras div-main">
+                    <div class="main-texto">
+                        <h2 class="main-subtitulo">Temos brincadeiras mais divertidas</h2>
+                        <br>
+                        <a href="brincadeiras.html">Veja as brincadeiras</a>
+                    </div>
+                    <div class="main-img div-main-img-direita">
+                        <img src="img/brincadeiras.png" alt="Foto das brincadeiras">
+                    </div>
+                </div>
+                <!-- quem somos -->
+                <div class="div-quemsomos div-main">
+                    <div class="main-img div-main-img-esquerda">
+                        <img src="img/quemsomos.png" alt="Foto da equipe">
+                    </div>
+                    <div class="main-texto">
+                        <h2 class="main-subtitulo">Os nossos princípios</h2>
+                        <br>
+                        <a href="sobre.html">Quem somos</a>
+                    </div>
+                </div>
+                <!-- contato -->
+                <div id="contato" class="div-contato div-main">
+                    <div class="main-texto">
+                        <h2 class="main-subtitulo">Fale conosco</h2>
+                        <p style="font-size: 20px">Envie seus dados:</p>
+                        <form method="post" action="#">
+                            <div class="row">
+                                <div class="linha1">
+                                    <div class="form-group">
+                                        <label for="nome">Nome*</label>
+                                        <input type="text" name="nome" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail*</label>
+                                        <input type="email" name="email" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefone">Telefone*</label>
+                                        <input type="number" pattern="\d{2} \d{5}-\d{4}$" name="fone" class="form-control fonesbr" required="" maxlength="15">
+                                    </div>
+                                </div>
+                                <div class="linha2">
+                                    <div class="form-group">
+                                        <label for="idade">Idade*</label>
+                                        <input type="text" name="idade" class="form-control" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="genero">Gênero*</label><br>
+                                        <div class="form-control campo-genero">
+                                            <input type="radio" name="genero" value="feminino">
+                                            <label for="feminino">Feminino</label>
+                                            <input type="radio" name="genero" value="masculino">
+                                            <label for="masculino">Masculino</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="campo-mensagem">
+                                <label for="mensagem">Mensagem*</label>
+                                <textarea class="form-control" name="mensagem" rows="4" required=""></textarea>
+                            </div>
+                            <button type="submit" class="contatoBtn">Enviar</button>
+                            <button type="reset" class="contatoBtn">Limpar</button>
+                        </form>        
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div role="contentinfo">
+                    <p>©Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
